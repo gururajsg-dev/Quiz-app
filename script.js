@@ -301,8 +301,7 @@ function CreateAnswerList(currentQuestion) {
       if (e.target.dataset.correct === "correct") score++;
       const answerBtn=e.target.parentElement.querySelectorAll(".answer-btn");
       answerBtn.forEach((e)=>{
-          e.classList.add(e.dataset.correct);
-          e.classList.add("disbled");
+          e.classList.add(e.dataset.correct);          
       })
       // e.target.classList.add(e.target.dataset.correct);
       debugger;
