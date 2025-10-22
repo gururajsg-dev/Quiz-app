@@ -299,7 +299,13 @@ function CreateAnswerList(currentQuestion) {
     btn.dataset.correct = answer.correct;
     btn.addEventListener("click", (e) => {
       if (e.target.dataset.correct === "correct") score++;
-      e.target.classList.add(e.target.dataset.correct);
+      const answerBtn=e.target.parentElement.querySelectorAll(".answer-btn");
+      answerBtn.forEach((e)=>{
+          e.classList.add(e.dataset.correct);
+          e.classList.add("disbled");
+      })
+      // e.target.classList.add(e.target.dataset.correct);
+      debugger;
       setTimeout(() => {
         ShowQuestion();
       }, 1500);

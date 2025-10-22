@@ -154,16 +154,16 @@ button:hover {
   border-color: green;
 }
 
-@media screen and (max-width:600px){
-  .quiz-header{
-    font-size: .8rem;
+@media screen and (max-width: 600px) {
+  .quiz-header {
+    font-size: 0.8rem;
     margin-bottom: 0.5rem;
   }
   .answer-btn {
-  padding: .75rem;
-  cursor: pointer;  
+    padding: 0.75rem;
+    cursor: pointer;
   }
-  .answer-btn:active{
-    transform:scale(.8);
-  }  
-}                                                                            
+  .answer-btn:active {
+    transform: scale(0.8);
+  }
+}
