@@ -1,0 +1,169 @@
+/*reset styles*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.container {
+  background-color: white;
+  border-radius: 2rem;
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+  position: relative;
+}
+
+/*screens*/
+.screen {
+  display: none;
+  padding: 2rem;
+  text-align: center;
+}
+
+.screen.active {
+  display: block;
+}
+
+/*start screen*/
+
+#start-screen h1 {
+  color: orangered;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.quiz-header {
+  margin-bottom: 1rem;
+}
+
+#quiz-text {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.quiz-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: grey;
+  margin-top: 1rem;
+}
+
+.answer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 1rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.answer-btn {
+  background-color: antiquewhite;
+  color: rgba(40, 38, 38, 0.964);
+  border: 2px solid rgb(246, 214, 172);
+  border-radius: 10px;
+  padding: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+  margin: 0.5rem 1rem;
+}
+
+.answer-btn:hover {
+  background-color: rgba(245, 210, 172, 0.8);
+  border: 2px solid rgba(250, 200, 170, 1);
+}
+
+.answer-btn-incorrect {
+  color: red;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: beige;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.progress {
+  height: 100%;
+  background-color: orangered;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+/*resul scren*/
+
+#result-screen h1 {
+  color: orangered;
+  margin-bottom: 1rem;
+}
+
+.result-info {
+  border-color: bisque;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.result-info P {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+#result-message {
+  color: orangered;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: orangered;
+  color: white;
+  border: 1px solid rgb(138, 39, 3);
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: orange;
+}
+.incorrect {
+  background-color: rgba(255, 0, 0, 0.2);
+  color: red;
+  border-color: red;
+}
+.correct {
+  background-color: rgba(3, 240, 3, 0.2);
+  color: green;
+  border-color: green;
+}
+
+@media screen and (max-width:600px){
+  .quiz-header{
+    font-size: .8rem;
+    margin-bottom: 0.5rem;
+  }
+  .answer-btn {
+  padding: .75rem;
+  cursor: pointer;  
+  }
+  .answer-btn:active{
+    transform:scale(.8);
+  }  
+}                                                                            
