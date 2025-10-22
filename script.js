@@ -302,7 +302,7 @@ function CreateAnswerList(currentQuestion) {
       e.target.classList.add(e.target.dataset.correct);
       setTimeout(() => {
         ShowQuestion();
-      }, 2000);
+      }, 1500);
     });
   });
 }
